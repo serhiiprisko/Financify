@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:transitionName="@string/transition_budgetAddCategory">
+
+    <!-- Category Name -->
+    <EditText
+        android:id="@+id/editCategoryNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category Name"/>
+
+    <!-- Category Amount -->
+    <EditText
+        android:id="@+id/editCategoryAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Amount"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/deleteCategoryDialogButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_cancel" />
+        <Button
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/editCategoryDialogButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_save" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+</LinearLayout>
